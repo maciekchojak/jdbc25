@@ -53,7 +53,10 @@ public class JdbcExercises {
     @Test
     public void add_new_person_using_sql() throws SQLException {
         final int expectedNumbersOfUpdates = 1;
-
+        String sqlStatement = "insert into `persons`" +
+                "(`personId`, `personName`, `addressLine1`, `addressLine2`, `city`, `postalCode`, `country`) " +
+                "values ( 666, 'Jan Konieczny', 'Kopytkowo 99', '' , 'Kozigrod', '64-203', 'Polska')";
+        int updatedRows = statement.executeUpdate(sqlStatement);
 
 
         assertThat(updatedRows).isEqualTo(expectedNumbersOfUpdates);
