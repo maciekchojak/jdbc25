@@ -52,6 +52,7 @@ out/
 # mpeltonen/sbt-idea plugin
 .idea_modules/
 
+src/main/java/pl/jdbc/utils/MySqlDriver.java
 # JIRA plugin
 atlassian-ide-plugin.xml
 
