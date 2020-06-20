@@ -53,8 +53,10 @@ public class JdbcExercises {
     @Test
     public void add_new_person_using_sql() throws SQLException {
         final int expectedNumbersOfUpdates = 1;
-        //TODO odkomentuj poniższy kod i napisz kod, który zazieleni test
-        //assertThat(updatedRows).isEqualTo(expectedNumbersOfUpdates);
+
+
+
+        assertThat(updatedRows).isEqualTo(expectedNumbersOfUpdates);
     }
 
     @Order(3)
